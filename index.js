@@ -37,7 +37,7 @@ const questions = [
   },
   {
     name: "Licenses",
-    message: "What license(s) would you like to add?",
+    message: "What license would you like to add?",
     type: "list",
     choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"],
   },
