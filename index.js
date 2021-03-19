@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer"); // adds inquirer package to askk questions
 const fs = require("fs"); //adds filesystem package to make new file ie readme
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown");//brings generateMarkdown function
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -19,6 +19,7 @@ const questions = [
     name: "Installation",
     message: "What are the install instructions?",
     type: "input",
+    default: "npm i"
   },
   {
     name: "Usage",
@@ -54,22 +55,22 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+//function writeToFile(fileName, data) {
   // fs.writeFile("GREADME.md", data,(err)=> {
   //     console.log("Created GREADME.md")
   //     if  (err) console.log(err);
   // })
-}
+//}
 
 // TODO: Create a function to initialize app
-function init() {
+function init() {///ask inquirer to prompt questions
   inquirer.prompt(questions).then(function (data) {
     console.log(data);
     //let stringifiedData= JSON.stringify(data, null, 2)
-    ///.console.log(stringifiedData)
+    ///.console.log(stringifiedData)//ask to filesystem  to create file named GREADME. using generateMarkdown function
     fs.writeFile("GREADME.md", generateMarkdown(data), (err) => {
       console.log("Created GREADME.md");
-      if (err) console.log(err);
+      if (err) console.log(err);//error logs inconsole the error
     });
     // writeToFile("README.md", generatMarkedown(data))
     // console.log("Creating README....");

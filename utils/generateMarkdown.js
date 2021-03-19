@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  if(license == "APACHE 2.0")
+function renderLicenseBadge(license) {//pulls license choice
+  if(license == "APACHE 2.0")// if apache 2.0 return imag tag
   return `<img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></img>`
   if(license == "MIT")
   return `<img src="https://img.shields.io/badge/License-MIT-yellow.svg"></img>`
@@ -21,7 +21,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if(license !== "None")
-  return `[License](#License)`//link in table of contents
+  return `* [License](#License)`//link in table of contents in generatMarkdown
   else{
     return "";
   }
@@ -32,13 +32,13 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license !== "None") {
+  if (license !== "None") {//if a license was chosen, return a license section for md
     return `## License
     
     ${license}
     `
   } else {
-    return "";
+    return "";//otherwise retur emtpy string
   }
   // check user's choices
     // render section
@@ -46,42 +46,45 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+function generateMarkdown(data) {//returns a md with temp lits and format
   // const objData= JSON.parse(data)
   return `# ${data.Title}
   ${renderLicenseBadge(data.Licenses)} 
 
-  ## Description 
-  ${data.Description}
 
-  ## Table of Contents
-  [Installation](#Installation)
-  [Tests](#Tests)
-  [Contributing](#Contributing)
-  [Usage](#Usage)
+## Description 
+${data.Description}
+
+## Table of Contents
+* [Installation](#Installation)
+* [Tests](#Tests)
+* [Contributing](#Contributing)
+* [Usage](#Usage)
 ${renderLicenseLink(data.Licenses)}
-  [Get in Touch](#Get-in-Touch)
+* [Get in Touch](#Get-in-Touch)
 
 
-  ## Installation
-  ${data.Installation}
+## Installation
+${data.Installation}
 
-  ## Tests
-  ${data.Tests}
+## Tests
+${data.Tests}
 
-  ## Contributing
-  ${data.Contributing}
+## Contributing
+${data.Contributing}
 
-  ## Usage
-  ${data.Usage}
+## Usage
+${data.Usage}
   
-  ${renderLicenseSection(data.Licenses)}
+${renderLicenseSection(data.Licenses)}
 
-  ## Get In Touch
-  Email me at: ${data.Email}
-  Check out my Github: https://github.com/${data.Github}
+
+## Get In Touch
+Email me at: ${data.Email}
+Check out my Github: https://github.com/${data.Github}
 
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = generateMarkdown;// sets genMarkdown funct to be exported
+

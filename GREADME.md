@@ -1,36 +1,38 @@
-# The Perfect README
-  <img src="https://img.shields.io/badge/License-GPLv3-blue.svg"></img> 
-
-  ## Description 
-  My project is an easy-to-use, time efficient template that allows you to create professional markdown files.
-
-  ## Table of Contents
-  [Installation](#Installation)
-  [Tests](#Tests)
-  [Contributing](#Contributing)
-  [Usage](#Usage)
-[License](#License)
-  [Get in Touch](#Get-in-Touch)
+# README Generator
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg"></img> 
 
 
-  ## Installation
-  You must have NODE.js installed as well as the Inquirer and FileSystem package.
+## Description 
+The best
 
-  ## Tests
-  Test any way you like.
+## Table of Contents
+* [Installation](#Installation)
+* [Tests](#Tests)
+* [Contributing](#Contributing)
+* [Usage](#Usage)
+* [License](#License)
+* [Get in Touch](#Get-in-Touch)
 
-  ## Contributing
-  Anyone can contribute as long as it improves the project.
 
-  ## Usage
-  Anyone that wants to save time and make markdowns easier can use this.
+## Installation
+npm i
+
+## Tests
+test
+
+## Contributing
+contribute whatever
+
+## Usage
+use it anyway
   
-  ## License
+## License
     
-    GPL 3.0
+    MIT
     
 
-  ## Get In Touch
-  Email me at: sergiogomez100000@gmail.com
-  Check out my Github: https://github.com/sergiogomez100000
+
+## Get In Touch
+Email me at: sergiogomez100000@gmail.com
+Check out my Github: https://github.com/sergiogomez100000
 

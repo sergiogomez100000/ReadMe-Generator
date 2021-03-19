@@ -4,17 +4,17 @@
 My project is a easy-to-use template that can create README markdown files in minutes!
 
 ## Table of Contents
-[Installation](#Installation)
-[Usage](#Usage)
-[Tests](#Tests)
-[Links](#Links)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Tests](#Tests)
+* [Links](#Links)
   
 
 ## Installation
 You need to have NODE.js installed as well as the Inquirer and FileSystem package.
 
 ## Usage
-Anyone who wants an easier way to make a markdown file.
+run the file in integrated terminal, node index.js and answer prompts to create README.
 
 ## Tests
 Multiple tests in production.
